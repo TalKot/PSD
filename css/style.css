@@ -1,0 +1,592 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* RESET CSS BEGIN */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET CSS END*/
+
+
+/* HELPER CLASSES BEGIN */
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+/*HELPER CLASSES END*/
+
+
+/* GENERAL RULES*/
+
+@font-face {
+    font-family: 'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+
+
+#hero {
+    background-image: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url('../img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+h2 {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 30px;
+    padding-bottom: 3px;
+    border-bottom: 4px solid white transparent;
+    transition: border-bottom 0.1s, color 0.1s;
+
+}
+
+.nav li a:hover {
+    border-bottom: 4px solid white;
+    transition: border-bottom 0.1s, color 0.1s;
+}
+
+#hero h2 {
+    color: white;
+    margin-bottom: 40px;
+
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 90px;
+    position: relative;
+}
+
+.imgs {
+    float: right;
+    position: absolute;
+    right: -135px;
+}
+
+.iphone {
+    width: 85%;
+    position: relative;
+    margin-bottom: -240px;
+}
+
+.cta-info {
+    width: 60%;
+    padding-right: 150px;
+    float: left;
+}
+
+.hero-para {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'HelveticaNeue-Thin';
+    color: white;
+    margin-bottom: 55px;
+}
+
+.cta-button {
+    padding: 23px 35px;
+    background: #282828;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #383737;
+    transition: 0.3s;
+}
+
+
+.phone-icon {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+
+/* APP FEATURES */
+
+#app-features .container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#app-features h2 {
+    color: #8a8a8a;
+    margin-bottom: 40px;
+}
+
+
+.p-features {
+    font-family: 'HelveticaNeue-Thin';
+    font-size: 22px;
+    line-height: 28px;
+    padding: 0px 130px;
+}
+
+.col-4-app {
+    width: 33.33%;
+    float: left;
+    padding: 0px 45px;
+}
+
+
+.col-4-app p {
+    font-family: 'HelveticaNeue-Thin';
+    font-size: 18px;
+    line-height: 24px;
+    color: #646464;
+}
+
+.row {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.row h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+
+
+
+/* NOSE SECTION */
+
+#nose {
+    background: url('../img/nose-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.download-info {
+    width: 50%;
+    padding: 200px 0px;
+}
+
+
+#nose h2 {
+    margin-bottom: 40px;
+    color: white;
+}
+
+
+.nose-p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'HelveticaNeue-Thin';
+    margin-bottom: 50px;
+
+}
+
+.download-btn {
+    padding: 15px;
+    background: #d9332d;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.download-btn:hover {
+    background: #c33934;
+    transition: 0.3s;
+}
+
+
+.reddish {
+    color: #f55150;
+}
+
+
+/* FOOTER */
+
+
+footer {
+ background: #2e2e38;
+}
+
+footer .container {
+    padding: 120px 20px;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer p {
+    font-family: 'HelveticaNeue-Thin';
+}
+
+.ul-posts li {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    padding-left: 70px;
+}
+
+.col-4-footer {
+    width: 33.33%;
+    float: left;
+    margin-top: 77px;
+    color: white;
+    padding: 30px;
+}
+
+.ul-posts,
+.ul-tweets {
+    margin-top: 25px;
+     font-family: 'HelveticaNeue-Thin';
+}
+
+.reddish-bg {
+    background: url('../img/rectangle.png') no-repeat;
+}
+
+
+.block {
+    display: block;
+}
+
+.p-about {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+
+.ul-tweets li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.smallText {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+/* COPYRIGHT */
+
+.copyright .container {
+    padding: 40px;
+    text-align: center;
+}
+
+.copyright {
+    background-color: #d7dedc;
+}
+
+.inline {
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.inline a {
+    text-decoration: none;
+    color: black;
+}
+
+.cr,
+.me {
+    margin-right: 40px;
+}
+
+.fb,
+.tw {
+    margin-right: 40px;
+}
+
+.cr:after,
+.me:after {
+    content: "";
+    border: 1px solid #555555;
+    margin-left: 35px;
+}
+
+
+
+
+/* ANIMATIONS */
+
+.iphone-on {
+    position: absolute;
+    right: 175px;
+    top: 112px;
+    width: 54%;
+}
+
+.iphone-btn {
+    position: absolute;
+    right: 215px;
+}
+
+.js-wp-2 {
+    opacity: 0;
+}
+
+.js-wp-2.animated {
+    opacity: 1;
+}
+
+
+
+.js-wp-3 {
+    opacity: 0;
+    animation-delay: 3.2s;
+}
+
+.js-wp-3.animated {
+    opacity: 1;
+}
+
+
+
+/* MEDIA QUERIES / RESPONSIVENESS */
+
+
+@media only screen and (max-width: 1120px) {
+
+    .cta-info {
+        padding-right: 40px;
+    }
+
+    .download-info {
+        width: 80%;
+    }
+
+}
+
+
+@media only screen and (max-width: 820px) {
+
+    .iphone,
+    .iphone-on,
+    .iphone-btn {
+        display: none;
+    }
+
+    .cta-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .p-features {
+        padding: 0px 30px;
+    }
+
+    .col-4-app {
+        width: 100%;
+        float: none;
+        margin-bottom: 50px;
+    }
+
+    .row h3 {
+        margin: 15px 0;
+    }
+
+    .fb,
+    .tw,
+    .dr {
+        margin-top: 20px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        display: block;
+        z-index: 1000;
+    }
+
+
+    .burger-nav {
+        background: url(../img/hamburger.png) no-repeat 100% center;
+        display: block;
+        height: 31px;
+        width: 40px;
+        cursor: pointer;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    .container nav ul {
+        height: 0px;
+        overflow: hidden;
+        background: #282828;
+        border-radius: 5px;
+    }
+
+    .container nav ul.open {
+        height: auto;
+        clear: both;
+    }
+
+
+    .container nav ul li {
+        float: none;
+        text-align: right;
+        width: auto;
+        margin: 0;
+        display: block;
+    }
+
+    .container nav ul li a {
+        color: white;
+        padding: 10px;
+        display: block;
+        margin: 0;
+    }
+
+    .container nav ul li a:hover {
+        border: none;
+    }
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .col-4-footer {
+        width: 100%;
+        float: none;
+        margin-top: 0px;
+       font-weight: 400;
+    }
+
+    .footer-logo {
+        margin-bottom: 35px;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .cr:after,
+    .me:after {
+
+        display: none;
+}
+
+}
